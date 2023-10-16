@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://demoinsuranceserver.database.windows.net:1433;database=insurance-db;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: scott
+    password: Br1ac3549
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto:
+          dialect: org.hibernate.dialect.SQLServer2012Dialect
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
